@@ -1,124 +1,225 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/assets/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="shortcut icon" type="image/x-icon" href="/images/tgstrans3.png" />
-	<script src="/assets/script.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="images/tgstrans3.png" />
 	<title>The Golden Spoon </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
 </head>
 <body>
-	<!--Toolbar-->
-	<div class="toolbar">
-		<a href="/index" class="logoLink">
-			<img class="toolbarImage" src="images/tgstrans2.png">
-			<span class="tgslogo">&nbsp The Golden Spoon</span>
+	<nav class="navbar navbar-expand-sm bg-default navbar-dark bg-dark sticky-top">
+		<a href="index.html" class="navbar-brand">
+			<img src="images/tgstrans2.png" style="height:30px">
+			The Golden Spoon
 		</a>
-		<ul class="toolbarList">
-			<li><a href="/menu" class="toolbarLink">MENU</a></li><span class="pipe">  |  </span>
-			<li><a href="/location" class="toolbarLink">LOCATION</a></li><span class="pipe"> | </span>
-			<li><a href="/menu" class="toolbarLink">ORDER ONLINE</a></li><span class="pipe"> | </span>
-			<li><a href="/about" class="toolbarLink">ABOUT US</a></li>
-		</ul>
-		<ul class="toolbarList2">
-			<li><a href="/cart" class="toolbarLink">CART &nbsp<i class="fa fa-shopping-cart"></i></a></li><span class="pipe"> |</span>
-			<li><a href="/login" class="toolbarLink">LOGIN &nbsp<i class="fa fa-user"></i></a></li>
-		</ul>
-	</div>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+				<li class="nav-item"><a class="nav-link" href="location.html">LOCATION</a></li>
+				<li class="nav-item"><a class="nav-link" href="menu.html">ORDER ONLINE</a></li>
+				<li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+			</ul>
+
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a class="nav-link" href="cart.html">CART<i class="fas fa-shopping-cart"></i></a></li>
+				<li class="nav-item"><a class="nav-link" href="login.html">LOGIN<i class="fas fa-user"></i></a></li>
+			</ul>
+		</div>
+	</nav>
+
 	<!--Image 1-->
-	<div class="parallax7">
-		<!--<img src="images/parallax7.jpg" width="100%" alt="Image Unavailable">-->
-		<div class="textOverlay">
-			<div class="text1">OUR MENU</div>
-			<div class="text2"><b>___________</b></div>
+	<div class="card bg-dark text-white">
+  		<img class="card-img h-100" src="images/parallax7.jpg" alt="Card image">
+  		<div class="card-img-overlay text-white row h-100">
+  			<div class="my-auto mx-auto"> 
+    		<h1 class="display-3 text-white row justify-content-center" style="font-size:5vw;">OUR MENU</h1>
+			<div class="row justify-content-center" style="font-size:2vw;"><b>_____________________________________________________</b></div>
 			<br>
-			<div class="text3"><b>MAY THE BELLY RULE THE MIND</b></div>
+			<p class="lead mb-0 row justify-content-center" style="font-size:2vw;"><b>MAY THE BELLY RULE THE MIND</b></p>
 		</div>
+  		</div>
 	</div>
+
 	<!--Text1-->
-	<div class="callUs">
-		For call ahead pick-up ordering, Call 9876543210
+	<div class="p-1 bg-dark text-white" style="font-family: Monotype Corsiva; font-size:1.5vw;">
+		<div class="row justify-content-center">For call ahead pick-up ordering, Call 9876543210</div>
+	</div><br><br>
+
+<div class="container">
+  <br><br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#sas">Soups & Salads</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#app">Appetizers</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#main">Maincourse</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#bev">Beverages</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#des">Desserts</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="sas" class="container tab-pane active"><br>
+      <ul>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Soup Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      </ul>
+    </div>
+    <div id="app" class="container tab-pane fade"><br>
+      <ul>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Appetizer Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      </ul>
+    </div>
+    <div id="main" class="container tab-pane fade"><br>
+      <ul>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Maincourse Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      </ul>
+    </div>
+    <div id="bev" class="container tab-pane fade"><br>
+      <ul>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Beverages Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      </ul>
+    </div>
+    <div id="des" class="container tab-pane fade"><br>
+      <ul>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      	<li class="p-1">Desserts Item<span class="float-right">Rs.0<input type="number" name="quantity" max="5" style="width:50px; height: 20px"></span></li>
+      </ul>
+    </div>
+    <div class="row justify-content-center">
+    	<button type="submit" class="btn btn-primary border">Add to cart</button>
+		<button type="submit" class="btn btn-primary border">Reset</button>
 	</div>
-	<!--Menu-->
-	<form>
-		<div class="menuHeading" id="m1" onclick="disp1()">
-			<span class="meal">SOUPS & SALADS</span>
-			<img src="images/plus.png" class="rotPlus">
-		</div>
-		<div id="items1">
-			<ul>
-				<% for (item of menu){
-					if(item.meal=='Soups and Salads'){ %>
-					<li><%=item.item%> - <input type="number" name="<%=item.name%>"  min="0" max="5" disabled><span class="menuItem">Rs. <%=item.price%></span><span><br><%=item.description%></span></li>
-					<%}
-				}%>
-			</ul>
-		</div>
-		<div class="menuHeading" id="m2" onclick="disp2()">
-			<span  class="meal">APPETIZERS</span>
-			<img src="images/plus.png" class="rotPlus">
-		</div>
-		<div id="items2">
-			<ul>
-				<% for (item of menu){
-					if(item.meal=='Appetizers'){ %>
-					<li><%=item.item%> - <input type="number" name="<%=item.name%>"  min="0" max="5" disabled><span class="menuItem">Rs. <%=item.price%></span><span><br><%=item.description%></span></li>
-					<%}
-				}%>
-			</ul>
-		</div>
-		<div class="menuHeading"  id="m3"  onclick="disp3()">
-			<span class="meal">MAIN COURSE</span>
-			<img src="images/plus.png" class="rotPlus">
-		</div>
-		<div id="items3">
-			<ul>
-				<% for (item of menu){
-					if(item.meal=='Maincourse'){ %>
-					<li><%=item.item%> - <input type="number" name="<%=item.name%>"  min="0" max="5" disabled><span class="menuItem">Rs. <%=item.price%></span><span><br><%=item.description%></span></li>
-					<%}
-				}%>
-			</ul>
-		</div>
-		<div class="menuHeading"  id="m4"  onclick="disp4()">
-			<span class="meal">BEVERAGES</span>
-			<img src="images/plus.png" class="rotPlus">
-		</div>
-		<div id="items4">
-			<ul>
-				<% for (item of menu){
-					if(item.meal=='Beverages'){ %>
-					<li><%=item.item%> - <input type="number" name="<%=item.name%>"  min="0" max="5" disabled><span class="menuItem">Rs. <%=item.price%></span><span><br><%=item.description%></span></li>
-					<%}
-				}%>
-			</ul>
-		</div>
-		<div class="menuHeading"  id="m5"  onclick="disp5()">
-			<span class="meal">DESSERTS</span>
-			<img src="images/plus.png" class="rotPlus">
-		</div>
-		<div id="items5">
-			<ul>
-				<% for (item of menu){
-					if(item.meal=='Desserts'){ %>
-					<li><%=item.item%> - <input type="number" name="<%=item.name%>"  min="0" max="5"  disabled><span class="menuItem">Rs. <%=item.price%></span><span><br><%=item.description%></span></li>
-					<%}
-				}%>
-			</ul>
-		</div>
-		<br>
-		<div class="submitMenu"><input type="submit" class="button2" value="ADD TO CART"><!--<input type="submit" class="button2" value="PROCEED TO CHECKOUT">--><input class="button1" type="reset" value="RESET"></div>
-	</form>
+    </div>
+  </div><br><br>
+
+
 	<!--Newsletter-->
-	<div class="newsletter">
-		<div>SIGN UP FOR OUR NEWSLETTER!</div><br>
-		<div>
-			<form method="POST" action="/subscribe">
-				<input type="email" placeholder="EMAIL*" class="mail" name="mailid" required>
-				<input type="submit" value="SUBSCRIBE" class="button1">
+	<div class="p-5 bg-dark text-white">
+		<div class="h5 row justify-content-center text-white">SIGN UP FOR OUR NEWSLETTER!</div><br>
+		<div class="form-group form-inline">
+			<form class="mx-auto">
+				<input type="email" placeholder="EMAIL*" name="mailid" class="form-control" required>
+				<button type="button" class="btn btn-danger">Submit</button></div>
 			</form>
 		</div>
 	</div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

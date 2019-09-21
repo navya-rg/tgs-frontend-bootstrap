@@ -1,108 +1,153 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/assets/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="shortcut icon" type="image/x-icon" href="/images/tgstrans3.png" />
-	<script src="/assets/script.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="images/tgstrans3.png" />
 	<title>The Golden Spoon </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
 </head>
 <body>
-	<!--Toolbar-->
-	<div class="toolbar">
-		<a href="/index" class="logoLink">
-			<img class="toolbarImage" src="images/tgstrans2.png">
-			<span class="tgslogo">&nbsp The Golden Spoon</span>
+	<nav class="navbar navbar-expand-sm bg-default navbar-dark bg-dark sticky-top">
+		<a href="index.html" class="navbar-brand">
+			<img src="images/tgstrans2.png" style="height:30px">
+			The Golden Spoon
 		</a>
-		<ul class="toolbarList">
-			<li><a href="/menu" class="toolbarLink">MENU</a></li><span class="pipe">  |  </span>
-			<li><a href="/location" class="toolbarLink">LOCATION</a></li><span class="pipe"> | </span>
-			<li><a href="/menu" class="toolbarLink">ORDER ONLINE</a></li><span class="pipe"> | </span>
-			<li><a href="/about" class="toolbarLink">ABOUT US</a></li>
-		</ul>
-		<ul class="toolbarList2">
-			<li><a href="/cart" class="toolbarLink">CART &nbsp<i class="fa fa-shopping-cart"></i></a></li><span class="pipe"> |</span>
-			<li><a href="/login" class="toolbarLink">LOGIN &nbsp<i class="fa fa-user"></i></a></li>
-		</ul>
-	</div>
-	<!--Image 1-->
-	<div class="parallax1">
-		<!--<img src="images/parallax1.jpg" width="100%" alt="Image Unavailable">-->
-		<div class="textOverlay">
-			<div class="locationText1">OUR LOCATIONS</div>
-			<div class="locationText2"><b>___________</b></div>
-			<br>
-			<div class="locationText3"><b>COME ON IN AND PULL UP A CHAIR</b></div>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+				<li class="nav-item"><a class="nav-link" href="location.html">LOCATION</a></li>
+				<li class="nav-item"><a class="nav-link" href="menu.html">ORDER ONLINE</a></li>
+				<li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+			</ul>
+
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a class="nav-link" href="cart.html">CART<i class="fas fa-shopping-cart"></i></a></li>
+				<li class="nav-item"><a class="nav-link" href="login.html">LOGIN<i class="fas fa-user"></i></a></li>
+			</ul>
 		</div>
+	</nav>
+
+	<!--Image 1-->
+	<div class="card bg-dark text-white">
+  		<img class="card-img h-100" src="images/parallax1.jpg" alt="Card image">
+  		<div class="card-img-overlay text-white row h-100">
+  			<div class="my-auto mx-auto"> 
+    		<h1 class="display-3 text-white row justify-content-center" style="font-size:5vw;">OUR LOCATIONS</h1>
+			<div class="row justify-content-center" style="font-size:2vw;"><b>_____________________________________________________</b></div>
+			<br>
+			<p class="lead mb-0 row justify-content-center" style="font-size:2vw;"><b>COME ON IN AND PULL UP A CHAIR</b></p>
+		</div>
+  		</div>
 	</div>
+
 	<!--Text1-->
-	<div class="callUs">
-		For call ahead pick-up ordering, Call 9876543210
-	</div>
+	<div class="p-1 bg-dark text-white" style="font-family: Monotype Corsiva; font-size:1.5vw;">
+		<div class="row justify-content-center">For call ahead pick-up ordering, Call 9876543210</div>
+	</div><br><br>
+
 	<!--9 locations-->
-	<div class="locationContainer">
-  		<img src="images/loc1.jpg" class="locationImage">
-  		<div class="locationOverlay">
-    		<div class="locationText">VELLORE<br><span class="addr">VIT University, Vellore - 632014</span></div>
+	<div class="card-columns row justify-content-center">
+	<div class="card" style="width:400px">
+	 	<img class="card-img-top" src="images/loc1.jpg" alt="Card image">
+  		<div class="card-body">
+    		<h4 class="card-title">VELLORE</h4>
+    		<p class="card-text">VIT University, Vellore - 632014</p>
   		</div>
 	</div>
-	<div class="locationContainer">
-  		<img src="images/loc2.jpg" class="locationImage">
-  		<div class="locationOverlay">
-    		<div class="locationText">CHENNAI<br><span class="addr">Express Avenue, Chennai - 600001</span></div>
+
+	<div class="card" style="width:400px">
+	 	<img class="card-img-top" src="images/loc2.jpg" alt="Card image">
+  		<div class="card-body">
+    		<h4 class="card-title">CHENNAI</h4>
+    		<p class="card-text">Express Avenue, Chennai - 600001</p>
   		</div>
 	</div>
-	<div class="locationContainer">
-  		<img src="images/loc3.jpg" class="locationImage">
-  		<div class="locationOverlay">
-    		<div class="locationText">MUMBAI<br><span class="addr">Phoenix Marketcity, Mumbai - 643055</span></div>
+
+	<div class="card" style="width:400px">
+	 	<img class="card-img-top" src="images/loc3.jpg" alt="Card image">
+  		<div class="card-body">
+    		<h4 class="card-title">MUMBAI</h4>
+    		<p class="card-text">Phoenix Marketcity, Mumbai - 643055</p>
   		</div>
 	</div>
-	<div class="locationContainer">
-  		<img src="images/loc4.jpg" class="locationImage">
-  		<div class="locationOverlay">
-    		<div class="locationText">DELHI<br><span class="addr">Vasant Square Mall, New Delhi - 654321</span></div>
+	</div>
+
+	<div class="card-columns row justify-content-center">
+	<div class="card" style="width:400px">
+	 	<img class="card-img-top" src="images/loc4.jpg" alt="Card image">
+  		<div class="card-body">
+    		<h4 class="card-title">DELHI</h4>
+    		<p class="card-text">Vasant Square Mall, New Delhi - 654321</p>
   		</div>
 	</div>
-	<div class="locationContainer">
-  		<img src="images/loc5.jpg" class="locationImage">
-  		<div class="locationOverlay">
-    		<div class="locationText">BANGALORE<br><span class="addr">The Forum Mall, Bangalore - 601010</span></div>
+
+	<div class="card" style="width:400px">
+	 	<img class="card-img-top" src="images/loc5.jpg" alt="Card image">
+  		<div class="card-body">
+    		<h4 class="card-title">BANGALORE</h4>
+    		<p class="card-text">The Forum Mall, Bangalore - 601010</p>
   		</div>
 	</div>
-	<div class="locationContainer">
-  		<img src="images/loc6.jpg" class="locationImage">
-  		<div class="locationOverlay">
-    		<div class="locationText">CALCUTTA<br><span class="addr">OH-170 Rajiv Gandhi Nagar, Calcutta - 43920</span></div>
+
+	<div class="card" style="width:400px">
+	 	<img class="card-img-top" src="images/loc6.jpg" alt="Card image">
+  		<div class="card-body">
+    		<h4 class="card-title">CALCUTTA</h4>
+    		<p class="card-text">OH-170 Rajiv Gandhi Nagar, Calcutta - 43920</p>
   		</div>
 	</div>
-	<div class="locationContainer">
-  		<img src="images/loc7.jpg" class="locationImage">
-  		<div class="locationOverlay">
-    		<div class="locationText">HYDERABAD<br><span class="addr">Forum Sujana, Hyderabad - 383473</span></div>
+	</div>
+
+	<div class="card-columns row justify-content-center">
+	<div class="card" style="width:400px">
+	 	<img class="card-img-top" src="images/loc7.jpg" alt="Card image">
+  		<div class="card-body">
+    		<h4 class="card-title">HYDERABAD</h4>
+    		<p class="card-text">Forum Sujana, Hyderabad - 383473</p>
   		</div>
 	</div>
-	<div class="locationContainer">
-  		<img src="images/loc8.jpg" class="locationImage">
-  		<div class="locationOverlay">
-    		<div class="locationText">GOA<br><span class="addr">Cacullo Mall, Panjim, Goa - 867897</span></div>
+
+	<div class="card" style="width:400px">
+	 	<img class="card-img-top" src="images/loc8.jpg" alt="Card image">
+  		<div class="card-body">
+    		<h4 class="card-title">GOA</h4>
+    		<p class="card-text">Cacullo Mall, Panjim, Goa - 867897</p>
   		</div>
 	</div>
-	<div class="locationContainer">
-  		<img src="images/loc9.jpg" class="locationImage">
-  		<div class="locationOverlay">
-    		<div class="locationText">JAIPUR<br><span class="addr">Hungry Birds Block, Jaipur - 234152</span></div>
+
+	<div class="card" style="width:400px">
+	 	<img class="card-img-top" src="images/loc9.jpg" alt="Card image">
+  		<div class="card-body">
+    		<h4 class="card-title">JAIPUR</h4>
+    		<p class="card-text">Hungry Birds Block, Jaipur - 234152</p>
   		</div>
 	</div>
-	<div class="newsletter">
-		<div>SIGN UP FOR OUR NEWSLETTER!</div><br>
-		<div>
-			<form method="POST" action="/subscribe">
-				<input type="email" placeholder="EMAIL*" class="mail" name="mailid" required>
-				<input type="submit" value="SUBSCRIBE" class="button1">
+	</div>
+
+	<div class="p-5 bg-dark text-white">
+		<div class="h5 row justify-content-center text-white">SIGN UP FOR OUR NEWSLETTER!</div><br>
+		<div class="form-group form-inline">
+			<form class="mx-auto">
+				<input type="email" placeholder="EMAIL*" name="mailid" class="form-control" required>
+				<button type="button" class="btn btn-danger">Submit</button></div>
 			</form>
 		</div>
 	</div>
+	
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
